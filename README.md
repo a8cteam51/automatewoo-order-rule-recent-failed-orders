@@ -9,6 +9,11 @@ Extends the functionality of AutomateWoo with 3 custom "Shop" rules which check 
 
 Input your desired number of failed orders to check against. If your website has created that number of failed orders in that time period, the rule will return true, based on your comparator.
 
+Tips:
+- Is available for any trigger, since it doesn't use a specific order or subscription object
+- Also includes a bonus rule which checks for pending orders created in the last 24 hours
+- Would work well with the custom daily trigger here: https://github.com/a8cteam51/automatewoo-daily-trigger
+
 ![Example usage](screenshot.png)
 
 ## Support
