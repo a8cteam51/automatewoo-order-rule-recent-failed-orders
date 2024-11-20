@@ -21,8 +21,9 @@ add_filter( 'automatewoo/rules/includes', 'to51_automatewoo_failed_order_rules' 
  * @return array
  */
 function to51_automatewoo_failed_order_rules( $rules ) {
-	$rules['failed_orders_in_last_hour']     = dirname( __FILE__ ) . '/includes/class-failed-orders-previous-hour.php';
-	$rules['failed_orders_in_last_12_hours'] = dirname( __FILE__ ) . '/includes/class-failed-orders-previous-twelve.php';
-	$rules['failed_orders_in_last_24_hours'] = dirname( __FILE__ ) . '/includes/class-failed-orders-previous-twenty-four.php';
+	$rules['failed_orders_in_last_hour']      = dirname( __FILE__ ) . '/includes/class-failed-orders-previous-hour.php';
+	$rules['failed_orders_in_last_12_hours']  = dirname( __FILE__ ) . '/includes/class-failed-orders-previous-twelve.php';
+	$rules['failed_orders_in_last_24_hours']  = dirname( __FILE__ ) . '/includes/class-failed-orders-previous-twenty-four.php';
+	$rules['pending_orders_in_last_24_hours'] = dirname( __FILE__ ) . '/includes/class-pending-orders-previous-twenty-four.php';
 	return $rules;
 }
