@@ -9,7 +9,7 @@ defined( 'ABSPATH' ) || exit;
  */
 class Pending_Orders_Previous_Twenty_Four extends Abstract_Number {
 
-	public $data_item      = 'order';
+	public $data_item      = 'shop';
 	public $support_floats = false;
 
 	/**
@@ -23,12 +23,13 @@ class Pending_Orders_Previous_Twenty_Four extends Abstract_Number {
 	/**
 	 * Validates the rule against the number of pending orders in the store for the last 24 hours.
 	 *
-	 * @param $order \WC_Order
+	 * @param $data_item mixed The data item from the trigger (not used in this rule)
 	 * @param $compare string
 	 * @param $value int The number of pending orders to check against.
+	 *
 	 * @return bool
 	 */
-	public function validate( $order, $compare, $value ) {
+	public function validate( $data_item, $compare, $value ) {
 		// Ensure value is an integer representing number of pending orders
 		$pending_orders_compare = (int) $value;
 
