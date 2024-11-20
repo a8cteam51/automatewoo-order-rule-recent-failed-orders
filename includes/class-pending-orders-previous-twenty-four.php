@@ -9,7 +9,7 @@ defined( 'ABSPATH' ) || exit;
  */
 class Pending_Orders_Previous_Twenty_Four extends Abstract_Number {
 
-	public $data_item      = 'order';
+	public $data_item      = null;
 	public $support_floats = false;
 
 	/**
