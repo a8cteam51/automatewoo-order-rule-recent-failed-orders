@@ -3,7 +3,7 @@
  * Plugin Name: AutomateWoo Order Rule - Recent Failed Orders
  * Plugin URI:  https://github.com/a8cteam51/automatewoo-order-rule-recent-failed-orders
  * Description: Extends the functionality of AutomateWoo with a custom rule which checks for recent failed orders
- * Version:     1.1.0
+ * Version:     1.0.0
  * Author:      WP Special Projects
  * Author URI:  https://wpspecialprojects.wordpress.com/
  * License:     GPL v2 or later

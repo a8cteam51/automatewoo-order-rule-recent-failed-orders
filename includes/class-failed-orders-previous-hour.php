@@ -9,7 +9,7 @@ defined( 'ABSPATH' ) || exit;
  */
 class Failed_Orders_Previous_Hour extends Abstract_Number {
 
-	public $data_item      = null;
+	public $data_item      = 'order';
 	public $support_floats = false;
 
 	/**
@@ -23,12 +23,12 @@ class Failed_Orders_Previous_Hour extends Abstract_Number {
 	/**
 	 * Validates the rule against the number of failed orders in the store for the last hour.
 	 *
-	 * @param $data_item mixed (Optional) The data item from the trigger
+	 * @param $order \WC_Order
 	 * @param $compare string
 	 * @param $value int The number of failed orders to check against.
 	 * @return bool
 	 */
-	public function validate( $data_item = null, $compare, $value ) {
+	public function validate( $order, $compare, $value ) {
 		// Ensure value is an integer representing number of failed orders
 		$failed_orders_compare = (int) $value;
 
